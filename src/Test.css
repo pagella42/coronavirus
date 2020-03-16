@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+
+@media screen and (min-width: 700px) {
+
+#card-button{
+    margin-right: 10%;
+    width: 10vw;
+    height: 5vh;
+}
+#select-button{
+    margin-right: 10%;
+    width: 5vw;
+    height: 5vh;
+}
+#selected-button{
+    margin-right: 10%;
+    width: 5vw;
+    height: 5vh;
+}
+}
+@media screen and (max-width: 700px) {
+
+    #card-button{
+        margin-right: 10%;
+        width: 25vw;
+        height: 5vh;
+    }
+    #select-button{
+        margin-right: 10%;
+        width: 10vw;
+        height: 5vh;
+    }
+    #selected-button{
+        margin-right: 10%;
+        width: 10vw;
+        height: 5vh;
+    }
+    }
+    
+
+@media screen and (min-width: 1000px) {
+    #card{
+       
+        width: 60vw;
+        height: 60vh;
+    }
+    .question-text{
+        font-size: 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .question-text-contact{
+        font-size: 1.7em;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+}
+ 
+ 
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    #card{
+       
+        width: 70vw;
+        height: 60vh;
+    }
+    .question-text{
+        font-size: 2em;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .question-text-contact{
+        font-size: 1.7em;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+}
+ 
+ 
+ 
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    #card{
+       
+        width: 80vw;
+        height: 60vh;
+    }
+    .question-text{
+        font-size: 1.7em;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .question-text-contact{
+        font-size: 1.7em;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+}
+ 
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    #card{
+       
+        width: 80vw;
+        height: 70vh;
+    }
+    .question-text{
+        font-size: 1.7em;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .question-text-contact{
+        font-size: 1.3em;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+}
+ 
+@media screen and (max-width: 500px) {
+    #card{
+       
+        width: 95vw;
+        height: 70vh;
+    }
+    .question-text{
+        font-size: 1.3em;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .question-text-contact{
+        font-size: 1em;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+}
+ 
+ 
+#card{
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 0.7fr;
+    justify-content: center;
+align-items: center;
+}
+#card-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#question-box{
+width: 100%;
+height: 100%;
+text-align: center;
+display: grid;
+justify-content: center;
+align-items: center;
+}
+
+#card-button-cont{
+    display: grid;
+    justify-content: right;
+align-items: center;
+width: 100%;
+border-top: #218c74 0.5px solid;
+height: 100%;
+
+}
+#card-button{
+  
+    border: 1px solid #218c74;
+    color: #218c74;
+    border-radius: 3px;
+    display: grid;
+    justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+#card-button:hover{
+   background-color: #218c74;
+   color: white;
+}
+
+#symptoms-box{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+#select-button{
+    
+    border: 1px solid #218c74;
+    color: #218c74;
+    border-radius: 3px;
+    display: grid;
+    justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+#selected-button{
+    
+    background-color: #218c74;
+    
+    color: white;
+    border-radius: 3px;
+    display: grid;
+    justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+#select-button:hover{
+    background-color: #218c74;
+    color: white;
+}
+.symptom-row{
+    display: flex;
+    align-items: center;
+    
+}
+#travel-box{
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    height: 20vh;
+}
+#travel-destinations{
+    width: 80%;
+   
+}
+#card-body-travel{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 2fr;
+}
+#contact-options{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+#card-body-contact{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+}
+
+
