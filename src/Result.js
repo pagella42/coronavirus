@@ -68,6 +68,7 @@ class Result extends Component {
           
             {this.state.answer == 0 ?
             <div id="card-body-disclaimer">
+              <br/>
               <span className="disclaimer-text">
                 Dado que:
                 </span><br/>
@@ -90,6 +91,7 @@ class Result extends Component {
               : null}
             {this.state.answer == 1 ?
               <div id="card-body-disclaimer">
+                <br/>
               <span className="disclaimer-text">
 
                 Dado que:
@@ -116,6 +118,7 @@ class Result extends Component {
               : null}
             {this.state.answer == 2 ?
               <div id="card-body-disclaimer">
+                <br/>
                 <span className="disclaimer-text">
 
                 No te preocupes, no hay indicios para sospechar que estes infectado del coronavirus
@@ -134,11 +137,13 @@ class Result extends Component {
 
             {this.state.answer == 3 ?
               <div id="card-body-disclaimer">
+                <br/>
               </div>
               : null}
 
             {this.state.answer == 4 ?
               <div id="card-body-disclaimer">
+                <br/>
                 <span className="disclaimer-text">
 
                 No te preocupes, no hay indicios para sospechar que estes infectado del coronavirus
@@ -156,11 +161,13 @@ class Result extends Component {
               : null}
             {this.state.answer == 5 ?
               <div id="card-body-disclaimer">
+                <br/>
 
               </div>
               : null}
             {this.state.answer == 6 ?
               <div id="card-body-disclaimer">
+                <br/>
                 <span className="disclaimer-text">
 
                 No te preocupes, no hay indicios para sospechar que estes infectado del coronavirus
@@ -178,6 +185,7 @@ class Result extends Component {
               : null}
             {this.state.answer == 7 ?
               <div id="card-body-disclaimer">
+                <br/>
 
               </div>
               : null}
