@@ -9,7 +9,11 @@ html,body{
 }
 
 @media screen and (min-width: 800px) {
-  #footer{
+    #body-cont{
+    
+        height:70vh;
+    }
+    #footer{
     /* margin-top: 10%; */
     height: 20vh;
 
@@ -94,7 +98,11 @@ border-bottom-left-radius: 20px;
 }
   }
   @media screen and (min-width: 600px) and (max-width: 800px) {
-   #footer{
+    #body-cont{
+    
+        height:80vh;
+    }
+    #footer{
     height: 20vh;
 
    }
@@ -178,8 +186,11 @@ border-bottom-left-radius: 20px;
 
 
   @media screen and (max-width: 600px) {
-   #footer{
-    margin-top: 30%;
+    #body-cont{
+    
+        height:80vh;
+    }
+    #footer{
     flex-direction: column;
 
    }
@@ -294,8 +305,9 @@ border-bottom-left-radius: 20px;
     justify-items: center;
     align-items: center;
     width: 100%;
-    height:70vh;
+
 }
+
 
 
 
