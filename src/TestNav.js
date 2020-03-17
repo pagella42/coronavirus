@@ -1,46 +1,52 @@
 import React, { Component } from 'react';
 import './Test.css';
-import Test from './Symptomps';
+import Symptoms from './Symptoms';
 import Travel from './Travel';
 import Contact from './Contact';
 import { Link } from "react-router-dom";
+import Result from './Result';
+import Disclaimer from './Disclaimer';
 
 class TestNav extends Component {
   constructor() {
     super()
     this.state = {
-      showSymtopms: true,
+      showSymptoms: true,
       showTraveled: false,
       showContact: false,
-      symtopms:{},
-      traveled:false,
-      contacted:false,
+      showDisclaimer: false,
+      showResult: false,
+      symptoms: {},
+      traveled: false,
+      contacted: false,
     }
   }
-moveOn=(from,to, data, dataKey)=>{
-this.setState({[to]:true, [from]:false, [dataKey]:data})
-}
+  moveOn = (from, to, data, dataKey) => {
+    this.setState({ [to]: true, [from]: false, [dataKey]: data })
+  }
   render() {
-      return(
-        <div>
+    return (
+      <div>
         <div id="header">
           <Link to="/">
-          <div id="header-title">
-            <div class="header-main">
-              <span className="header-title-text">CORONAVIRUS</span>
-              <img style={{ width: "4vw", height: "4vw" }} src={require("./components/virusicon.png")} />
-            </div>
-            <div className="header-subtitle">
-              <span className="header-subtitle-text">Comproba tus síntomas ahora</span>
+            <div id="header-title">
+              <div class="header-main">
+                <span className="header-title-text">CORONAVIRUS</span>
+                <img style={{ width: "4vw", height: "4vw" }} src={require("./components/virusicon.png")} />
+              </div>
+              <div className="header-subtitle">
+                <span className="header-subtitle-text">Comproba tus síntomas ahora</span>
 
+              </div>
             </div>
-          </div>
-</Link>
+          </Link>
 
         </div>
-        {this.state.showSymtopms ?<Test moveOn={this.moveOn}/> : null }
-        {this.state.showTraveled ?<Travel moveOn={this.moveOn}/> : null}
-        {this.state.showContacted ?<Contact moveOn={this.moveOn}/> : null}
+        {this.state.showSymptoms ? <Symptoms moveOn={this.moveOn} /> : null}
+        {this.state.showTraveled ? <Travel moveOn={this.moveOn} /> : null}
+        {this.state.showContacted ? <Contact moveOn={this.moveOn} /> : null}
+        {this.state.showDisclaimer ? <Disclaimer moveOn={this.moveOn}/> : null}
+        {this.state.showResult? <Result data={{symptoms:this.state.symptoms, traveled:this.state.traveled, contacted:this.state.contacted}}/> : null}
 
         <div id="footer">
           <span className="sponsors-text">SPONSORS</span>
@@ -49,7 +55,7 @@ this.setState({[to]:true, [from]:false, [dataKey]:data})
           <span className="sponsors-text-big">{"{sponsor 3}"}</span>
         </div>
       </div>
-      )
+    )
   }
 
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Test.css';
 
-class Symtomps extends Component {
+class Symptoms extends Component {
   constructor() {
     super()
     this.state = {
@@ -13,7 +13,7 @@ class Symtomps extends Component {
   }
 
 
-loadValue(value, data){
+loadValue(value, data){  
 this.setState({[value]: data})
 }
 
@@ -75,7 +75,7 @@ this.setState({[value]: data})
           </div>
           <div id="card-button-cont">
   
-            <div id="card-button" onClick={()=>this.props.moveOn("showSymtopms","showTraveled",data, "symptoms")}>
+            <div id="card-button" onClick={()=>this.props.moveOn("showSymptoms","showTraveled",data, "symptoms")}>
               <span>
                 Siguiente
               </span>
@@ -93,5 +93,5 @@ this.setState({[value]: data})
 
 }
 
-export default Symtomps;
+export default Symptoms;
 
