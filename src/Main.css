@@ -9,6 +9,11 @@ body{
     /* margin-top: 10%; */
 
   }
+  .menu-text{
+    color: #34495e;
+    font-size: 1.3em;
+    font-family: 'Archivo Narrow', sans-serif;
+}
     #buttons{
         width: 75vw;
         height: 25vw;
@@ -79,6 +84,11 @@ border-bottom-left-radius: 20px;
     margin-top: 10%;
 
    }
+   .menu-text{
+    color: #34495e;
+    font-size: 1.1em;
+    font-family: 'Archivo Narrow', sans-serif;
+}
     #buttons{
         width: 90vw;
         height: 30vw;
@@ -152,6 +162,11 @@ border-bottom-left-radius: 20px;
     margin-top: 30%;
 
    }
+   .menu-text{
+    color: #34495e;
+    font-size: 1em;
+    font-family: 'Archivo Narrow', sans-serif;
+}
     .menu-text{
         color: #34495e;
     font-size: 1em;
@@ -315,9 +330,4 @@ border-bottom-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
-}
-.menu-text{
-    color: #34495e;
-    font-size: 1.3em;
-    font-family: 'Archivo Narrow', sans-serif;
 }
