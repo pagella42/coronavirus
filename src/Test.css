@@ -291,7 +291,7 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     overflow-y: auto;
-    overflow-x:hidden;
+    /* overflow-x:hidden; */
 }
 .disclaimer-text-container{
     text-align: center;
