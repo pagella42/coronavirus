@@ -7,7 +7,13 @@ html,body{
     padding: 0px;
     overflow-x: hidden; 
 }
+span{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
 
+}
 @media screen and (min-width: 800px) {
     #body-cont{
     

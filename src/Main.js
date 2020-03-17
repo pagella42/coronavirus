@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Main.css';
-import BodyNav from './BodyNav';
+import Menu from './Menu';
+import { Link } from "react-router-dom";
 
 class Main extends Component {
 
@@ -8,20 +9,20 @@ class Main extends Component {
     return (
       <div>
         <div id="header">
-          <div id="header-title">
-            <div class="header-main">
-              <span className="header-title-text">CORONAVIRUS</span>
-              <img style={{ width: "4vw", height: "4vw" }} src={require("./components/virusicon.png")} />
+          <Link to="/">
+            <div id="header-title">
+              <div class="header-main">
+                <span className="header-title-text">CORONAVIRUS</span>
+                <img style={{ width: "4vw", height: "4vw" }} src={require("./components/virusicon.png")} />
+              </div>
+              <div className="header-subtitle">
+                <span className="header-subtitle-text">Comproba tus síntomas ahora</span>
+              </div>
             </div>
-            <div className="header-subtitle">
-              <span className="header-subtitle-text">Comproba tus síntomas ahora</span>
-
-            </div>
-          </div>
-
+          </Link>
 
         </div>
-        <BodyNav/>
+        <Menu />
         <div id="footer">
           <span className="sponsors-text">SPONSORS</span>
           <span className="sponsors-text-big">{"{sponsor 1}"}</span>
