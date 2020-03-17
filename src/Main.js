@@ -24,10 +24,9 @@ class Main extends Component {
         <BodyNav/>
         <div id="footer">
           <span className="sponsors-text">SPONSORS</span>
-          <span className="sponsors-text-big">OSDE</span>
-          <span className="sponsors-text-big">SANOFI</span>
-          <span className="sponsors-text-big">MEDICUS</span>
-          <span className="sponsors-text-big">LARRETA</span>
+          <span className="sponsors-text-big">{"{sponsor 1}"}</span>
+          <span className="sponsors-text-big">{"{sponsor 2}"}</span>
+          <span className="sponsors-text-big">{"{sponsor 3}"}</span>
         </div>
       </div>
     )
