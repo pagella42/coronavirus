@@ -1,10 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
 
-@media screen and (min-width: 700px) {
 body{
     -webkit-overflow-scrolling: touch;
 }
+@media screen and (min-width: 700px) {
 #card-button{
     margin-right: 10%;
     width: 10vw;
