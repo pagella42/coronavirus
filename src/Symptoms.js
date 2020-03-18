@@ -30,7 +30,7 @@ this.setState({[value]: data})
         <div id="card">
           <div id="question-box">
 
-            <span className="question-text"><a href="tel:383-4238872">Selecciona </a>si tenes alguno de estos sintomas</span>
+            <span className="question-text">Selecciona si tenes alguno de estos sintomas</span>
           </div>
           <div id="card-body">
 
