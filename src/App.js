@@ -8,10 +8,12 @@ import Prevent from './Prevent';
 import ReactGA from 'react-ga';
 
 class App extends Component{
+  
   componentDidMount(){
-    ReactGA.initialize('UA-160931930-1');
-    ReactGa.pageview(window.location.pathname)
+    ReactGA.initialize('UA-160931930-1')
+    ReactGA.pageview(window.location.pathname)
   }
+
   render(){
     return(
       <Router>
