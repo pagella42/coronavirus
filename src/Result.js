@@ -110,7 +110,9 @@ class Result extends Component {
               <div id="card-body-disclaimer">
                 <br/>
                 <span className="disclaimer-text">
-                No te alarmes, es importante para definir los pasos a seguir que llames al 📞 107.<br/> Ahí, un equipo especializado va a articular los cuidados que necesitás.
+                •No te alarmes, es importante para definir los pasos a seguir que llames al 📞 107.<br/> Ahí, un equipo especializado va a articular los cuidados que necesitás.
+                <br/><br/><br/>
+                •Según el decreto nacional, por favor mantenete en tu domicilio y aislado de las personas que vivan con vos, hasta recibir las indicaciones por parte del equipo de profesionales del 107.
                 </span><br/>
               </div>
               : null}
@@ -138,11 +140,13 @@ class Result extends Component {
               : null}
             {this.state.answer == 5 ?
               <div id="card-body-disclaimer">
-                <br/>
-                <span className="disclaimer-text">
-                No te alarmes, es importante para definir los pasos a seguir que llames al 📞 107.<br/> Ahí, un equipo especializado va a articular los cuidados que necesitás.
-                </span><br/>
-              </div>
+              <br/>
+              <span className="disclaimer-text">
+              •No te alarmes, es importante para definir los pasos a seguir que llames al 📞 107.<br/> Ahí, un equipo especializado va a articular los cuidados que necesitás.
+              <br/><br/><br/>
+              •Según el decreto nacional, por favor mantenete en tu domicilio y aislado de las personas que vivan con vos, hasta recibir las indicaciones por parte del equipo de profesionales del 107.
+              </span><br/>
+            </div>
               : null}
             {this.state.answer == 6 ?
               <div id="card-body-disclaimer">
@@ -166,13 +170,14 @@ class Result extends Component {
               </div>
               : null}
             {this.state.answer == 7 ?
-              <div id="card-body-disclaimer">
-                <br/>
-                <span className="disclaimer-text">
-                No te alarmes, es importante para definir los pasos a seguir que llames al 📞 107.<br/> Ahí, un equipo especializado va a articular los cuidados que necesitás.
-                </span><br/>
-
-              </div>
+               <div id="card-body-disclaimer">
+               <br/>
+               <span className="disclaimer-text">
+               •No te alarmes, es importante para definir los pasos a seguir que llames al 📞 107.<br/> Ahí, un equipo especializado va a articular los cuidados que necesitás.
+               <br/><br/><br/>
+               •Según el decreto nacional, por favor mantenete en tu domicilio y aislado de las personas que vivan con vos, hasta recibir las indicaciones por parte del equipo de profesionales del 107.
+               </span><br/>
+             </div>
               : null}
 
           
