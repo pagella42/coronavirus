@@ -27,8 +27,8 @@ body{
 }
 @media screen and (max-width: 700px) {
     .call-link{
-        color:"white";
-         width:"60%";
+        color:white;
+         width:60%;
     }
     #card-button{
         margin-right: 10%;
@@ -51,8 +51,8 @@ body{
 @media screen and (min-width: 1000px) {
    
     .call-link{
-        color:"white";
-         width:"60%";
+        color:white;
+         width:60%;
     }
      #card{
        
@@ -79,8 +79,8 @@ body{
 
 @media screen and (min-width: 800px) and (max-width: 1000px) {
     .call-link{
-        color:"white";
-         width:"60%";
+        color:white;
+         width:60%;
     }
     #card{
        
@@ -108,8 +108,8 @@ body{
  
 @media screen and (min-width: 600px) and (max-width: 800px) {
     .call-link{
-        color:"white";
-         width:"90%";
+        color:white;
+         width:90%;
     }
     #card{
        
@@ -135,8 +135,8 @@ body{
  
 @media screen and (min-width: 500px) and (max-width: 600px) {
     .call-link{
-        color:"white";
-         width:"90%";
+        color:white;
+         width:90%;
     }
     #card{
        
@@ -160,8 +160,8 @@ body{
  
 @media screen and (max-width: 500px) {
     .call-link{
-        color:"white";
-         width:"90%";
+        color:white;
+         width:90%;
     }
     #card{
        
