@@ -12,6 +12,13 @@ class Result extends Component {
   componentDidMount() {
     this.runResults()
   }
+
+  sendResults(result){
+    ReactGA.event({
+      category:"Result",
+      action:result
+    })
+  }
   runResults() {
     let symptoms = this.props.data.symptoms.fiebre || this.props.data.symptoms.tos || this.props.data.symptoms.respiratorio || this.props.data.symptoms.malestar ? true : false
     let traveled = this.props.data.traveled
@@ -19,27 +26,38 @@ class Result extends Component {
 
     if (!symptoms && !traveled && !contacted) {
       this.setState({ answer: 0 })
+      this.sendResults("nada")
     }
     else if (symptoms && !traveled && !contacted) {
       this.setState({ answer: 1 })
+      this.sendResults("sintomas")
     }
     else if (!symptoms && !traveled && contacted) {
       this.setState({ answer: 2 })
+      this.sendResults("contacto")
     }
     else if (symptoms && !traveled && contacted) {
       this.setState({ answer: 3 })
+      this.sendResults("sintomas, contacto")
     }
     else if (!symptoms && traveled && !contacted) {
       this.setState({ answer: 4 })
+      this.sendResults("viaje")
     }
     else if (symptoms && traveled && !contacted) {
       this.setState({ answer: 5 })
+      this.sendResults("sintomas, viaje")
+
     }
     else if (!symptoms && traveled && contacted) {
       this.setState({ answer: 6 })
+      this.sendResults("viaje, contacto")
+
     }
     else if (symptoms && traveled && contacted) {
       this.setState({ answer: 7 })
+      this.sendResults("sintomas, viaje, contacto")
+
     }
   }
 

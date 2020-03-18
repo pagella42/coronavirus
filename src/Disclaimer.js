@@ -46,6 +46,9 @@ de hacer un diagnóstico de tu situación de salud, ni sustituye la consulta mé
 <br/>
 
 <span className="disclaimer-text">
+Referencia: <a href="https://www.buenosaires.gob.ar/sites/gcaba/files/protocolocoronaviruscaba_version10_16demarzo2020_8hs_1.pdf">Protocolo Gobierno de la Ciudad de Buenos Aires</a>
+</span><br/><br/>
+<span className="disclaimer-text">
 
 De estar de acuerdo y ser consciente de lo anterior, puede presionar el botón VER RESULTADO.
 </span>
