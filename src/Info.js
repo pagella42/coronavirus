@@ -33,16 +33,25 @@ class Info extends Component {
                         </div>
 
                         <div id="card-body-info">
-                            <span className="info-text">Es una enfermedad causada por un virus que se transmite a través de las gotas de
-                            estornudos y tos, y del contacto con manos a ojos, boca y nariz.
-                            Los primeros casos se detectaron en diciembre en personas que habían estado en un
-                            mercado de pescado de la ciudad de Wuhan, China, donde también se venden otros
-                            animales –especialmente aves y serpientes. Como otros coronavirus, el COVID-19 es un
-                            virus procedente de otra especie que ha adquirido la capacidad de infectar a las personas.
-La especie de la que procede aún no se ha identificado.</span>
+                            <span className="info-text">
+                                Los coronavirus (CoV) son una gran familia de virus que causan enfermedades que van desde el resfriado común hasta enfermedades más graves, como el síndrome respiratorio de Medio Oriente (MERS-CoV) y el síndrome respiratorio agudo severo (SARS-CoV).
+                            </span><br />
+                            <span className="info-text">
+                                COVID-19 es la enfermedad infecciosa causada por el coronavirus descubierto más recientemente. Este nuevo virus y enfermedad eran desconocidos antes de que comenzara el brote en Wuhan, China, en diciembre de 2019.
+</span><br />
+                            <span className="info-text">
+                                Los coronavirus son zoonóticos, lo que significa que se transmiten entre animales y personas.
+</span><br />
+                            <span className="info-text">
+                                Los signos comunes de infección incluyen síntomas respiratorios, fiebre, tos y dificultades respiratorias. En casos más graves, la infección puede causar neumonía, síndrome respiratorio agudo severo, insuficiencia renal e incluso la muerte.
+</span><br />
+                            <span style={{width:"100%", fontSize:"0.7em"}}>
+                                Referencia: Organización Mundial de la Salud (OMS) - https://www.who.int/health-topics/coronavirus / https://www.who.int/news-room/q-a-detail/q-a-coronaviruses
+                            </span><br />
+
                         </div>
 
-                        
+
 
                     </div>
 

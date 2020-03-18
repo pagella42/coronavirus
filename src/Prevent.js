@@ -34,29 +34,30 @@ class Prevent extends Component {
 
                         <div id="card-body-info">
                             <span className="info-text">
+                                Puede reducir sus posibilidades de infectarse o propagar COVID-19 tomando algunas precauciones simples:
+                            </span><br />
+                            <span className="info-text">
+                                •Limpie sus manos regularmente y a fondo con un desinfectante para manos a base de alcohol o lávelas con agua y jabón.
+</span><br />
+                            <span className="info-text">
+                                •Mantenga al menos 1 metro de distancia entre usted y cualquier persona que esté tosiendo o estornudando.
+</span><br />
+                            <span className="info-text">
+                                •Evite tocarse los ojos, la nariz y la boca.
+</span><br />
+                            <span className="info-text">
+                                •Asegúrese de que usted y las personas que lo rodean sigan una buena higiene respiratoria. Esto significa cubrirse la boca y la nariz con el codo o pañuelo doblado cuando tose o estornuda. Luego deseche el tejido usado inmediatamente.
+</span><br />
+                            <span className="info-text">
+                                •Quédese en casa si no se siente bien. Si tiene fiebre, tos y dificultad para respirar, busque atención médica y llame con anticipación. Siga las instrucciones de su autoridad de salud local.
+</span><br />
+                            <span style={{width:"100%", fontSize:"0.7em"}}>
+                                Referencia: Organización Mundial de la Salud (OMS) - https://www.who.int/news-room/q-a-detail/q-a-coronaviruses
+</span><br />
 
-                            Todas las medidas de prevención son ya conocidas por experiencias anteriores de
-enfermedades parecidas al COVID-19, por ejemplo, la gripe común. Evitar o mitigar el
-contagio del virus es una práctica de cuidado colectiva.
-                            </span>
-                            <span>
-• Al toser y estornudar, cubrirse la boca y la nariz con el codo flexionado.
-                            </span>
-                            <span>
-
-• Lavarse las manos con agua y jabón o usar alcohol en gel.
-                            </span>
-                            <span>
-                                
-• Limpiar las superficies de contacto frecuente con agua y lavandina.
-                            </span>
-                            <span>
-• Evitar tocarse la cara con las manos.
-
-                            </span>
                         </div>
 
-                     
+
 
                     </div>
 
