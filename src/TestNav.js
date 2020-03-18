@@ -52,7 +52,7 @@ class TestNav extends Component {
           <span className="sponsors-text">SPONSORS</span>
           <span className="sponsors-text-big">{"{sponsor 1}"}</span>
           <span className="sponsors-text-big">{"{sponsor 2}"}</span>
-          <span className="sponsors-text-big">{"{sponsor 3}"}</span>
+          {/* <span className="sponsors-text-big">{"{sponsor 3}"}</span> */}
         </div>
       </div>
     )

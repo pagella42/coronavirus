@@ -30,7 +30,7 @@ class Travel extends Component {
 
             <div id="travel-destinations">
               <span>
-              España, Italia (todo el país), Francia, Alemania, China (todas las provincias, incluyendo Hong Kong y Macao), Corea del Sur, Japón, Singapur, Irán
+              España, Italia (todo el país), Francia, Alemania, China (todas las provincias, incluyendo Hong Kong y Macao), Corea del Sur, Japón, Singapur, Irán, Brasil, Chile.
               </span>
             </div>
             <div id="travel-box">
