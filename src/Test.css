@@ -311,7 +311,7 @@ cursor: pointer;
 #card-body-disclaimer{
     width: 90%;
     height: 100%;
-    display: grid;
+    /* display: grid; */
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;

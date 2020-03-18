@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Test.css';
 import ReactGA from 'react-ga';
-
+import Numbers from './Numbers'
 class Result extends Component {
   constructor() {
     super()
@@ -133,6 +133,7 @@ class Result extends Component {
                 <br/><br/><br/>
                 •Según el decreto nacional, por favor mantenete en tu domicilio y aislado de las personas que vivan con vos, hasta recibir las indicaciones por parte del equipo de profesionales del 107.
                 </span><br/>
+                <Numbers/>
               </div>
               : null}
 
@@ -165,6 +166,8 @@ class Result extends Component {
               <br/><br/><br/>
               •Según el decreto nacional, por favor mantenete en tu domicilio y aislado de las personas que vivan con vos, hasta recibir las indicaciones por parte del equipo de profesionales del 107.
               </span><br/>
+              <Numbers/>
+
             </div>
               : null}
             {this.state.answer == 6 ?
@@ -196,6 +199,8 @@ class Result extends Component {
                <br/><br/><br/>
                •Según el decreto nacional, por favor mantenete en tu domicilio y aislado de las personas que vivan con vos, hasta recibir las indicaciones por parte del equipo de profesionales del 107.
                </span><br/>
+               <Numbers/>
+
              </div>
               : null}
 
