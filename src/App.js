@@ -5,9 +5,13 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import TestNav from './TestNav';
 import Info from './Info';
 import Prevent from './Prevent';
+import ReactGA from 'react-ga';
 
 class App extends Component{
-
+  componentDidMount(){
+    ReactGA.initialize('UA-160931930-1');
+    ReactGa.pageview(window.location.pathname)
+  }
   render(){
     return(
       <Router>

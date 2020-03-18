@@ -11,10 +11,6 @@ class Result extends Component {
 
   componentDidMount() {
     this.runResults()
-    setTimeout(() => {
-      
-      console.log(this.state.answer)
-    }, 3000);
   }
   runResults() {
     let symptoms = this.props.data.symptoms.fiebre || this.props.data.symptoms.tos || this.props.data.symptoms.respiratorio || this.props.data.symptoms.malestar ? true : false

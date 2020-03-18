@@ -11,7 +11,7 @@ class Main extends Component {
         <div id="header">
           <Link to="/">
             <div id="header-title">
-              <div class="header-main">
+              <div className="header-main">
                 <span className="header-title-text">CORONAVIRUS</span>
                 <img style={{ width: "4vw", height: "4vw" }} src={require("./components/virusicon.png")} />
               </div>

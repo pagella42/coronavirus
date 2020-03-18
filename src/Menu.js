@@ -1,8 +1,18 @@
 import React, { Component } from 'react';
 import './Main.css';
 import { Link } from "react-router-dom";
+import ReactGA from 'react-ga';
 
 class Menu extends Component {
+  
+
+  startTest(){
+    ReactGA.event({
+      category:"Button",
+      action:"Open test"
+    })
+  }
+
 
   render() {
     return (
@@ -12,7 +22,7 @@ class Menu extends Component {
 
           <Link to="/quees"> 
             <div className="circle-cont">
-              <div className="button-cont-1 circle-small">
+              <div className="button-cont-1 circle-small"> 
                 <img style={{ width: "12vw", height: "12vw" }} src={require("./components/info.png")} />
                 <div class="menu-text-box">
                   <span className="menu-text">¿Que es?</span>
@@ -21,7 +31,7 @@ class Menu extends Component {
             </div>
           </Link>
           <Link to="/test">
-            <div className="circle-cont">
+            <div onClick={this.startTest} className="circle-cont">
               <div className="button-cont-3 circle-big" >
                 <img style={{ width: "17vw", height: "17vw" }} src={require("./components/test.png")} />
                 <div class="menu-text-box">

@@ -6,6 +6,7 @@ import Contact from './Contact';
 import { Link } from "react-router-dom";
 import Result from './Result';
 import Disclaimer from './Disclaimer';
+import ReactGA from 'react-ga';
 
 class TestNav extends Component {
   constructor() {
@@ -21,6 +22,12 @@ class TestNav extends Component {
       contacted: false,
     }
   }
+
+  componentDidMount(){
+    // ReactGA.initialize('UA-160931930-1');
+    // ReactGa.pageview("/test")
+  }
+
   moveOn = (from, to, data, dataKey) => {
     this.setState({ [to]: true, [from]: false, [dataKey]: data })
   }
@@ -30,7 +37,7 @@ class TestNav extends Component {
         <div id="header">
           <Link to="/">
             <div id="header-title">
-              <div class="header-main">
+              <div className="header-main">
                 <span className="header-title-text">CORONAVIRUS</span>
                 <img style={{ width: "4vw", height: "4vw" }} src={require("./components/virusicon.png")} />
               </div>
