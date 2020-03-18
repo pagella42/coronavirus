@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Test.css';
 import { Link } from "react-router-dom";
+import Footer from './Footer';
 
 class Info extends Component {
 
@@ -58,12 +59,7 @@ class Info extends Component {
                 </div>
 
 
-                <div id="footer">
-                    <span className="sponsors-text">SPONSORS</span>
-                    <span className="sponsors-text-big">{"{sponsor 1}"}</span>
-                    <span className="sponsors-text-big">{"{sponsor 2}"}</span>
-                    {/* <span className="sponsors-text-big">{"{sponsor 3}"}</span> */}
-                </div>
+               <Footer/>
             </div>
         )
     }

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Result from './Result';
 import Disclaimer from './Disclaimer';
 import ReactGA from 'react-ga';
+import Footer from './Footer';
 
 class TestNav extends Component {
   constructor() {
@@ -55,12 +56,7 @@ class TestNav extends Component {
         {this.state.showDisclaimer ? <Disclaimer moveOn={this.moveOn}/> : null}
         {this.state.showResult? <Result data={{symptoms:this.state.symptoms, traveled:this.state.traveled, contacted:this.state.contacted}}/> : null}
 
-        <div id="footer">
-          <span className="sponsors-text">SPONSORS</span>
-          <span className="sponsors-text-big">{"{sponsor 1}"}</span>
-          <span className="sponsors-text-big">{"{sponsor 2}"}</span>
-          {/* <span className="sponsors-text-big">{"{sponsor 3}"}</span> */}
-        </div>
+        <Footer/>
       </div>
     )
   }
