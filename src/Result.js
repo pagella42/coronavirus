@@ -49,18 +49,18 @@ class Result extends Component {
 
       <div id="body-cont">
 
-        <div id="card">
+        <div id="card-disclaimer">
 
           <div id="question-box">
             <span className="question-text">
-              {this.state.answer == 0 ? "No te preocupes, no hay indicios para sospechar que estes infectado del coronavirus" : null}
-              {this.state.answer == 1 ? "No te preocupes, no hay indicios para sospechar que estes infectado del coronavirus" : null}
-              {this.state.answer == 2 ? "No te preocupes, no hay indicios para sospechar que estes infectado del coronavirus" : null}
-              {this.state.answer == 3 ? "Estamos frente a un caso sospechoso" : null}
-              {this.state.answer == 4 ? "No te preocupes, no hay indicios para sospechar que estes infectado del coronavirus" : null}
-              {this.state.answer == 5 ? "Estamos frente a un caso sospechoso" : null}
-              {this.state.answer == 6 ? "No te preocupes, no hay indicios para sospechar que estes infectado del coronavirus" : null}
-              {this.state.answer == 7 ? "Estamos frente a un caso sospechoso" : null}
+              {this.state.answer == 0 ? "No te preocupes, en tu caso, no hay sospecha de infección por coronavirus." : null}
+              {this.state.answer == 1 ? "No te preocupes, en tu caso, no hay sospecha de infección por coronavirus." : null}
+              {this.state.answer == 2 ? "No te preocupes, en tu caso, no hay sospecha de infección por coronavirus." : null}
+              {this.state.answer == 3 ? "En tu caso podría haber sospecha de infección por coronavirus." : null}
+              {this.state.answer == 4 ? "No te preocupes, en tu caso, no hay sospecha de infección por coronavirus." : null}
+              {this.state.answer == 5 ? "En tu caso podría haber sospecha de infección por coronavirus." : null}
+              {this.state.answer == 6 ? "No te preocupes, en tu caso, no hay sospecha de infección por coronavirus." : null}
+              {this.state.answer == 7 ? "En tu caso podría haber sospecha de infección por coronavirus." : null}
 
             </span>
           </div>
@@ -68,99 +68,49 @@ class Result extends Component {
           
             {this.state.answer == 0 ?
             <div id="card-body-disclaimer">
-              <br/>
               <span className="disclaimer-text">
-                Dado que:
+              Igual, es importante que recuerdes las medidas de prevención:
                 </span><br/>
-              <span className="disclaimer-text">
-              &emsp;&emsp;No has estado en ninguna zona con evidencia de transmisión comunitaria
-                </span><br/>
-                <span className="disclaimer-text">
-                &emsp;&emsp;No has estado en contacto con ningún caso sospechoso o confirmado
-                </span><br/>
-                <span className="disclaimer-text">
-                &emsp;&emsp;No tienes síntomas
-                </span><br/>
-              <span className="disclaimer-text">
-                Sigue los consejos de prevención:
-                </span><br/>
-              <span className="disclaimer-text">
-              •Lávate las manos frecuentemente (con agua y jabón o soluciones alcohólicas 70%), especialmente después del contacto directo con personas enfermas o su entorno.
-                </span><br/>
-              <span className="disclaimer-text">
-              •Tápate la boca y la nariz con pañuelos desechables o con la cara interna del codo en el momento de toser o estornudar y lava las manos enseguida (con soluciones alcohólicas 70% o con agua y jabón).
-                </span><br/>
-                <span className="disclaimer-text">
-                •Evita el contacto cercano (menos una distancia de dos metros) con personas que padecen infecciones respiratorias agudas y presentan tos, estornudos o expectoraciones, y no compartas las pertenencias personales.
-                </span><br/>
-                <span className="disclaimer-text">
-                •Evita compartir comida y utensilios (cubiertos, vasos, servilletas, pañuelos, etc.) y otros objetos sin limpiarlos debidamente.
-                </span><br/>
+                <span className="disclaimer-text">•Al toser o estornudar, tapate la boca y la nariz con el codo flexionado.</span><br/>
+                <span className="disclaimer-text">•Lavate las manos con agua y jabón o con alcohol en gel.</span><br/>
+                <span className="disclaimer-text">•Evitá tocarte los ojos, la nariz y la boca con las manos.</span><br/>
+                <span className="disclaimer-text">•No compartas bebidas, alimentos, vajillas, ni objetos personales con nadie.</span><br/>
+                <span className="disclaimer-text">•Lavá con agua y lavandina las superficies de contacto como escritorios o picaportes.</span><br/>
+                <span className="disclaimer-text">•Y tratá de no comer productos animales crudos o poco cocinados.</span><br/>
                 </div>
               : null}
             {this.state.answer == 1 ?
-              <div id="card-body-disclaimer">
-                <br/>
-              <span className="disclaimer-text">
-
-                Dado que:
-                </span><br/>
-                <span className="disclaimer-text">
-                &emsp;&emsp;No has estado en ninguna zona con evidencia de transmisión comunitaria
-                </span><br/>
-                <span className="disclaimer-text">
-                &emsp;&emsp;No has estado en contacto con ningún caso sospechoso o confirmado
-                </span><br/>
-                <span className="disclaimer-text">
-                &emsp;&emsp;Si lo crees necesario, llama al 061 Salud Responde para que valoren los síntomas que presentas.
-                </span><br/>
-                <span className="disclaimer-text">
-
-                Sigue los consejos de prevención:
-                </span><br/>
-                <span className="disclaimer-text">
-                •Lávate las manos frecuentemente (con agua y jabón o soluciones alcohólicas 70%), especialmente después del contacto directo con personas enfermas o su entorno.
-                </span><br/>
-                <span className="disclaimer-text">
-                •Tápate la boca y la nariz con pañuelos desechables o con la cara interna del codo en el momento de toser o estornudar y lava las manos enseguida (con soluciones alcohólicas 70% o con agua y jabón).
-                </span><br/>
-                <span className="disclaimer-text">
-                •Evita el contacto cercano (menos una distancia de dos metros) con personas que padecen infecciones respiratorias agudas y presentan tos, estornudos o expectoraciones, y no compartas las pertenencias personales.
-                </span><br/>
-                <span className="disclaimer-text">
-                •Evita compartir comida y utensilios (cubiertos, vasos, servilletas, pañuelos, etc.) y otros objetos sin limpiarlos debidamente.
-                </span><br/>
-            
-            </div>
+             <div id="card-body-disclaimer">
+             <span className="disclaimer-text">
+             Igual, es importante que recuerdes las medidas de prevención:
+               </span><br/>
+               <span className="disclaimer-text">•Al toser o estornudar, tapate la boca y la nariz con el codo flexionado.</span><br/>
+               <span className="disclaimer-text">•Lavate las manos con agua y jabón o con alcohol en gel.</span><br/>
+               <span className="disclaimer-text">•Evitá tocarte los ojos, la nariz y la boca con las manos.</span><br/>
+               <span className="disclaimer-text">•No compartas bebidas, alimentos, vajillas, ni objetos personales con nadie.</span><br/>
+               <span className="disclaimer-text">•Lavá con agua y lavandina las superficies de contacto como escritorios o picaportes.</span><br/>
+               <span className="disclaimer-text">•Y tratá de no comer productos animales crudos o poco cocinados.</span><br/>
+               </div>
               : null}
             {this.state.answer == 2 ?
-              <div id="card-body-disclaimer">
-                <br/>
-                <span className="disclaimer-text">
-
-                Los próximos 14 días continúa controlando la posible aparición de síntomas y sigue los consejos de prevención:
-                </span><br/>
-                <span className="disclaimer-text">
-                •Lávate las manos frecuentemente (con agua y jabón o soluciones alcohólicas 70%), especialmente después del contacto directo con personas enfermas o su entorno.
-                </span><br/> 
-                <span className="disclaimer-text">
-                •Tápate la boca y la nariz con pañuelos desechables o con la cara interna del codo en el momento de toser o estornudar y lava las manos enseguida (con soluciones alcohólicas 70% o con agua y jabón).
-                </span><br/>
-                <span className="disclaimer-text">
-                •Evita el contacto cercano (menos una distancia de dos metros) con personas que padecen infecciones respiratorias agudas y presentan tos, estornudos o expectoraciones, y no compartas las pertenencias personales.
-                </span><br/>
-                <span className="disclaimer-text">
-                •Evita compartir comida y utensilios (cubiertos, vasos, servilletas, pañuelos, etc.) y otros objetos sin limpiarlos debidamente.
-                </span><br/>
-            
-            </div>
+               <div id="card-body-disclaimer">
+               <span className="disclaimer-text">
+               Igual, es importante que recuerdes las medidas de prevención:
+                 </span><br/>
+                 <span className="disclaimer-text">•Al toser o estornudar, tapate la boca y la nariz con el codo flexionado.</span><br/>
+                 <span className="disclaimer-text">•Lavate las manos con agua y jabón o con alcohol en gel.</span><br/>
+                 <span className="disclaimer-text">•Evitá tocarte los ojos, la nariz y la boca con las manos.</span><br/>
+                 <span className="disclaimer-text">•No compartas bebidas, alimentos, vajillas, ni objetos personales con nadie.</span><br/>
+                 <span className="disclaimer-text">•Lavá con agua y lavandina las superficies de contacto como escritorios o picaportes.</span><br/>
+                 <span className="disclaimer-text">•Y tratá de no comer productos animales crudos o poco cocinados.</span><br/>
+                 </div>
               : null}
 
             {this.state.answer == 3 ?
               <div id="card-body-disclaimer">
                 <br/>
                 <span className="disclaimer-text">
-                En base a tus respuestas, recomendamos que realices una consulta a un profesional de la salud en tu país. Mientras tanto, te pedimos que evites el contacto con otras personas y extremes las medidas de prevención.
+                No te alarmes, es importante para definir los pasos a seguir que llames al 📞 107.<br/> Ahí, un equipo especializado va a articular los cuidados que necesitás.
                 </span><br/>
               </div>
               : null}
@@ -190,7 +140,7 @@ class Result extends Component {
               <div id="card-body-disclaimer">
                 <br/>
                 <span className="disclaimer-text">
-                En base a tus respuestas, recomendamos que realices una consulta a un profesional de la salud en tu país. Mientras tanto, te pedimos que evites el contacto con otras personas y extremes las medidas de prevención.
+                No te alarmes, es importante para definir los pasos a seguir que llames al 📞 107.<br/> Ahí, un equipo especializado va a articular los cuidados que necesitás.
                 </span><br/>
               </div>
               : null}
@@ -219,7 +169,7 @@ class Result extends Component {
               <div id="card-body-disclaimer">
                 <br/>
                 <span className="disclaimer-text">
-                En base a tus respuestas, recomendamos que realices una consulta a un profesional de la salud en tu país. Mientras tanto, te pedimos que evites el contacto con otras personas y extremes las medidas de prevención.
+                No te alarmes, es importante para definir los pasos a seguir que llames al 📞 107.<br/> Ahí, un equipo especializado va a articular los cuidados que necesitás.
                 </span><br/>
 
               </div>

@@ -25,7 +25,7 @@ class Menu extends Component {
               <div className="button-cont-1 circle-small"> 
                 <img style={{ width: "12vw", height: "12vw" }} src={require("./components/info.png")} />
                 <div class="menu-text-box">
-                  <span className="menu-text">¿Que es?</span>
+                  <span className="menu-text">¿Queées?</span>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@ class Menu extends Component {
               <img style={{ width: "12vw", height: "12vw" }} src={require("./components/prevencion.png")} />
               <div class="menu-text-box">
 
-                <span className="menu-text">¿Como prevenir?</span>
+                <span className="menu-text">¿Comó prevenir?</span>
               </div>
             </div>
 
