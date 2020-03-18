@@ -25,7 +25,7 @@ class Menu extends Component {
               <div className="button-cont-1 circle-small"> 
                 <img style={{ width: "12vw", height: "12vw" }} src={require("./components/info.png")} />
                 <div class="menu-text-box">
-                  <span className="menu-text">¿Queées?</span>
+                  <span className="menu-text">¿Qué es?</span>
                 </div>
               </div>
             </div>
