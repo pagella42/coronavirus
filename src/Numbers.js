@@ -2,12 +2,48 @@ import React, { Component } from 'react';
 import './Test.css';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
+import './Select.css';
 
 class Numbers extends Component {
- 
-
-
-  render() {
+    constructor() {
+        super()
+        this.state = {
+            value: "Elegií tu provincia",
+            numbers :  {
+                "Ciudad de Buenos Aires":"107",
+                "Provincia de Buenos Aires":"148",
+                "Entre Ríos":"0800-555-6549",
+                "Catamarca":"383-4238872",
+                "Jujuy":"0800-888-4767",
+                "La Pampa":"2954-619130",
+                "​​La Rioja":"107",
+                "​​Río Negro":"911",
+                "Santiago del Estero (SEASE)":"107",
+                "Santiago del Estero (Mirio Salud)":"385 4213006",
+                "Santiago del Estero":"385 5237077​",
+                "Córdoba":"107",
+                "Santa Fe":"0800-555-6549",
+                "Tucumán":"0800-555-8478",
+                "Tucumán (WhatsApp)":"381-3899025",
+                "Teléfono Mendoza (Covid)":"0800-800-26843",
+                "Chaco":"0800-444-0829",
+                "Corrientes":"107",
+                "San Luis":"107",
+                "San Juan":"107",
+                "Salta":"911",
+                "Chubut":"107",
+                "Santa Cruz":"107",
+                "Tierra del Fuego":"107",
+                "Formosa":"107",
+                "Misiones":"107",
+            }
+        }
+    }
+    handleChange = (e) => {
+        this.props.updateNumber(this.state.numbers[e.target.value])
+        
+      }
+    render() {
         let provincias = [
             "Ciudad de Buenos Aires",
             "Provincia de Buenos Aires",
@@ -36,38 +72,15 @@ class Numbers extends Component {
             "Formosa",
             "Misiones",
          ]
-         let numbers =  [
-            {name:"Ciudad de Buenos Aires", number:"107"},
-            {name:"Provincia de Buenos Aires", number:"148"},
-            {name:"Entre Ríos", number:"0800-555-6549"},
-            {name:"Catamarca", number:"383-4238872"},
-            {name:"Jujuy", number:"0800-888-4767"},
-            {name:"La Pampa", number:"2954-619130"},
-            {name:"​​La Rioja", number:"107"},
-            {name:"​​Río Negro", number:"911"},
-            {name:"Santiago del Estero (SEASE)", number:"107"},
-            {name:"Santiago del Estero (Mirio Salud)", number:"385 4213006"},
-            {name:"Santiago del Estero", number:"385 5237077​"},
-            {name:"Córdoba", number:"107"},
-            {name:"Santa Fe", number:"0800-555-6549"},
-            {name:"Tucumán", number:"0800-555-8478"},
-            {name:"Tucumán (WhatsApp)", number:"381-3899025"},
-            {name:"Teléfono Mendoza (Covid)", number:"0800-800-26843"},
-            {name:"Chaco", number:"0800-444-0829"},
-            {name:"Corrientes", number:"107"},
-            {name:"San Luis", number:"107"},
-            {name:"San Juan", number:"107"},
-            {name:"Salta", number:"911"},
-            {name:"Chubut", number:"107"},
-            {name:"Santa Cruz", number:"107"},
-            {name:"Tierra del Fuego", number:"107"},
-            {name:"Formosa", number:"107"},
-            {name:"Misiones", number:"107"},
-         ]
-    return (
-<Dropdown options={provincias}  value={"Elegí tu provincia"} placeholder="Elegí tu provincia" />
-    )
-  }
+         
+        return (
+            <select className="select-css" defaultValue={this.state.value}
+                onChange={this.handleChange}
+            >
+                {provincias.map(p => <option key={p} value={p}>{p}</option>)}
+            </select>
+        )
+    }
 
 
 }
