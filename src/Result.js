@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Test.css';
+import ReactGA from 'react-ga';
 
 class Result extends Component {
   constructor() {
