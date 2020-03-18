@@ -28,4 +28,4 @@ app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.listen(process.env.PORT || PORT,()=>console.log(`Running on port: ${PORT}`))
+app.listen(process.env.PORT || PORT,()=>console.log(`Running server on port: ${PORT}`))
