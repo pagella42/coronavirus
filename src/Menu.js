@@ -48,7 +48,7 @@ class Menu extends Component {
               <img style={{ width: "12vw", height: "12vw" }} src={require("./components/prevencion.png")} />
               <div class="menu-text-box">
 
-                <span className="menu-text">¿Comó prevenir?</span>
+                <span className="menu-text">¿Cómo prevenir?</span>
               </div>
             </div>
 

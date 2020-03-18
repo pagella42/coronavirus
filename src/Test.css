@@ -281,7 +281,7 @@ cursor: pointer;
 }
 
 #card-body-info{
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: grid;
     justify-items: center;
@@ -289,7 +289,7 @@ cursor: pointer;
 }
 
 .info-text{
-    width: 90%;
+    width: 100%;
 }
 .volver{
     color: #218c74;
