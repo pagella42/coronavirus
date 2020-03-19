@@ -11,17 +11,17 @@ body{
     }
 #card-button{
     margin-right: 10%;
-    width: 10vw;
+    min-width: 10vw;
     height: 5vh;
 }
 #select-button{
     margin-right: 10%;
-    width: 5vw;
+    min-width: 5vw;
     height: 5vh;
 }
 #selected-button{
     margin-right: 10%;
-    width: 5vw;
+    min-width: 5vw;
     height: 5vh;
 }
 }
@@ -32,17 +32,17 @@ body{
     }
     #card-button{
         margin-right: 10%;
-        width: 25vw;
+        min-width: 25vw;
         height: 5vh;
     }
     #select-button{
         margin-right: 10%;
-        width: 10vw;
+        min-width: 10vw;
         height: 5vh;
     }
     #selected-button{
         margin-right: 10%;
-        width: 10vw;
+        min-width: 10vw;
         height: 5vh;
     }
     }
@@ -363,6 +363,8 @@ cursor: pointer;
 align-items: center;
 border: #bdb7bd 1px solid;
 box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+margin-top: 5%;
+margin-bottom: 5%;
 
 }
 
