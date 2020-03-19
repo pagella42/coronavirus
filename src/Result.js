@@ -140,9 +140,9 @@ class Result extends Component {
              <Numbers updateNumber={this.updateNumber} />
              <br />
 
-             {this.state.selectedNumber !=== null ? <span className="number-text">LLamá al {this.state.selectedNumber}</span> : null}
+             {this.state.selectedNumber !== null ? <span className="number-text">LLamá al {this.state.selectedNumber}</span> : null}
              <br />
-             {this.state.selectedNumber !=== null ?
+             {this.state.selectedNumber !== null ?
                  <a href={`tel:${this.state.selectedNumber}`} className="call-link">
                <div className="call">
                  <span className="disclaimer-text">Llamar</span>
@@ -187,9 +187,9 @@ class Result extends Component {
              <Numbers updateNumber={this.updateNumber} />
              <br />
 
-             {this.state.selectedNumber !=== null ? <span className="number-text">LLamá al {this.state.selectedNumber}</span> : null}
+             {this.state.selectedNumber !== null ? <span className="number-text">LLamá al {this.state.selectedNumber}</span> : null}
              <br />
-             {this.state.selectedNumber !=== null ?
+             {this.state.selectedNumber !== null ?
                  <a href={`tel:${this.state.selectedNumber}`} className="call-link">
                <div className="call">
                  <span className="disclaimer-text">Llamar</span>
@@ -233,9 +233,9 @@ class Result extends Component {
                 <Numbers updateNumber={this.updateNumber} />
                 <br />
 
-                {this.state.selectedNumber !=== null ? <span className="number-text">LLamá al {this.state.selectedNumber}</span> : null}
+                {this.state.selectedNumber !== null ? <span className="number-text">LLamá al {this.state.selectedNumber}</span> : null}
                 <br />
-                {this.state.selectedNumber !=== null ?
+                {this.state.selectedNumber !== null ?
                     <a href={`tel:${this.state.selectedNumber}`} className="call-link">
                   <div className="call">
                     <span className="disclaimer-text">Llamar</span>
