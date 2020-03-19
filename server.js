@@ -1,12 +1,14 @@
 const express = require ('express')
 const bodyParser = require ('body-parser')
-var forceSsl = require('force-ssl-heroku');
+var sslRedirect = require('heroku-ssl-redirect');
 const path = require('path')
 const app = express()
+app.use(sslRedirect());
+
 const PORT = 4000
 
+
 app.use(express.static(path.join(__dirname, 'build')))
-app.use(forceSsl);
 
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*')
