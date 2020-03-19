@@ -158,7 +158,7 @@ class Result extends Component {
             <div id="card-body-disclaimer">
               <br />
               <span className="disclaimer-text">
-                Los próximos 14 días continúa controlando la posible aparición de síntomas y sigue los consejos de prevención:
+              De todas formas y por el decreto nacional, recordá realizar 14 días de cuarentena a partir de tu regreso al país. Además, es importante que recuerdes las medidas de prevención:
                 </span><br />
               <span className="disclaimer-text">
                 •Lávate las manos frecuentemente (con agua y jabón o soluciones alcohólicas 70%), especialmente después del contacto directo con personas enfermas o su entorno.
@@ -204,7 +204,7 @@ class Result extends Component {
             <div id="card-body-disclaimer">
               <br />
               <span className="disclaimer-text">
-                Los próximos 14 días continúa controlando la posible aparición de síntomas y sigue los consejos de prevención:
+              De todas formas y por el decreto nacional, recordá realizar 14 días de cuarentena a partir de tu regreso al país. Además, es importante que recuerdes las medidas de prevención:
                 </span><br />
               <span className="disclaimer-text">
                 •Lávate las manos frecuentemente (con agua y jabón o soluciones alcohólicas 70%), especialmente después del contacto directo con personas enfermas o su entorno.

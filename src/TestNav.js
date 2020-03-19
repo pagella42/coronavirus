@@ -34,30 +34,7 @@ class TestNav extends Component {
   }
   render() {
     return (
-      <div>
-        <div id="header">
-          <Link to="/">
-            <div id="header-title">
-              <div className="header-main">
-                <span className="header-title-text">CORONAVIRUS</span>
-                <img style={{ width: "4vw", height: "4vw" }} src={require("./components/virusicon.png")} />
-              </div>
-              <div className="header-subtitle">
-                <span className="header-subtitle-text">Comproba tus síntomas ahora</span>
-
-              </div>
-            </div>
-          </Link>
-
-        </div>
-        {this.state.showSymptoms ? <Symptoms moveOn={this.moveOn} /> : null}
-        {this.state.showTraveled ? <Travel moveOn={this.moveOn} /> : null}
-        {this.state.showContacted ? <Contact moveOn={this.moveOn} /> : null}
-        {this.state.showDisclaimer ? <Disclaimer moveOn={this.moveOn}/> : null}
-        {this.state.showResult? <Result data={{symptoms:this.state.symptoms, traveled:this.state.traveled, contacted:this.state.contacted}}/> : null}
-
-        <Footer/>
-      </div>
+      <div> <div id="header"> <Link to="/"> <div id="header-title"> <div className="header-main"> <span className="header-title-text">CORONAVIRUS</span> <img style={{width: "4vw", height: "4vw"}}src={require("./components/virusicon.png")}/> </div><div className="header-subtitle"> <span className="header-subtitle-text">Comproba tus síntomas ahora</span> </div></div></Link> </div>{this.state.showSymptoms ? <Symptoms moveOn={this.moveOn}/> : null}{this.state.showTraveled ? <Travel moveOn={this.moveOn}/> : null}{this.state.showContacted ? <Contact moveOn={this.moveOn}/> : null}{this.state.showDisclaimer ? <Disclaimer moveOn={this.moveOn}/> : null}{this.state.showResult? <Result data={{symptoms:this.state.symptoms, traveled:this.state.traveled, contacted:this.state.contacted}}/> : null}<Footer/> </div>
     )
   }
 
