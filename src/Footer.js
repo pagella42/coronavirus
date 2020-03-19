@@ -15,7 +15,7 @@ class Footer extends Component {
                     </span>
                     <br/>
                     <span className="footer-ref">
-                    * Referencia: <a className="footer-link" href="https://www.buenosaires.gob.ar/sites/gcaba/files/protocolocoronaviruscaba_version10_16demarzo2020_8hs_1.pdf">Protocolo Gobierno de la Ciudad de Buenos Aires </a> 
+                    * Referencia: <a className="footer-link" href="https://www.buenosaires.gob.ar/coronavirus">Protocolo Gobierno de la Ciudad de Buenos Aires </a> 
                     </span> 
                     </div>
                    
