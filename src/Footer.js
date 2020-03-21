@@ -36,7 +36,7 @@ class Footer extends Component {
                 </div>
                 <div className="footer-ref-cont">
                         <span className="footer-ref">
-                    *Referencia: Organización Mundial de la Salud (OMS) - <a className="footer-link" href="https://www.who.int/health-topics/coronavirus">Ref 1</a> / <a className="footer-link" href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses">Ref 2</a>
+                    *Referencia: Organización Mundial de la Salud (OMS) - <a className="footer-link" href="https://www.who.int/health-topics/coronavirus">Ref 1</a> / <a className="footer-link" href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses">Ref 2</a>  / <a className="footer-link" href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019">Ref 3</a>  / <a className="footer-link" href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses">Ref 4</a>  / <a className="footer-link" href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public">Ref 5</a> 
                     </span>
                     <br/>
                     <span className="footer-ref">
